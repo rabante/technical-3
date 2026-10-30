@@ -88,3 +88,29 @@ footer {
     font-size: var(--text-sm);
     color: var(--color-muted);
 }
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--color-primary);
+}
+
+.navbar a {
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    color: var(--color-on-primary);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: var(--color-primary-hover);
+    text-decoration: underline;
+}
+
+.navbar a:focus {
+    background: var(--color-primary-hover);
+    outline: 3px solid var(--color-focus);
+    outline-offset: -3px;
+}
